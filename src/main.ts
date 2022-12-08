@@ -153,7 +153,11 @@ if (parseInt(nota) >=70) {
 }
 
 console.log(nota)
-})
+});
+
+function asignament(): void {
+  
+}
 initSelect();
 
 

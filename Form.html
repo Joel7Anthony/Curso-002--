@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilos.css">
   <title>Formulario Estudiante</title>
 </head>
 <h1>MAMITAS PUEBLA</h1>
@@ -194,36 +194,78 @@
             <div class="col-6">
               <i class="fa-sharp fa-solid fa-at"></i>
               <label for="topgrade-gradebook" class="form-label">Nota:</label>
-              <input type="text" name="topgrade-gradebook" id="topgrade-gradebook" class="form-control" placeholder="100%">
-            </div>      
+              <input type="text" name="topgrade-gradebook" id="topgrade-gradebook" class="form-control"
+                placeholder="100%">
+            </div>
             <div class="col-6">
               <label for="" class="">Estado</label>
-              
-            </div> 
-              <div class="card-footer text-muted">
+
+            </div>
+            <div class="card-footer text-muted">
               <div class="col-6"><span id="estado-nota"></span></div>
               <br>
               <button class="btn btn-primary" id="estadoNota">Agregar actividad</button>
             </div>
           </div>
         </div>
-      </div>
+      </div>      
+      <table class="table table-bordered border-primary">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Estudiante</th>
+            <th scope="col">Curso</th>            
+            <th scope="col">Profesor</th>
+            <th scope="col">Nota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Diego Yanez</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>fat</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>asd</td>
+            <td>Base de datos</td>            
+            <td>Marizsa Tituaña</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Sevastian</td>
+            <td>Basse de datos</td>
+            <td>Lorena Chulde</td>
+            <td>100</td>
+          </tr>          
+        </tbody>
+      </table>
     </div>
   </div>
 
 
-    <script>let exports = {}; </script>
-    <script src="dist/main.js"></script>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-      </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-      </script>
+  <script>let exports = {}; </script>
+  <script src="dist/main.js"></script>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
