@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e71d5ce863.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+  <title>Formulario Estudiante</title>
+</head>
+<h1>MAMITAS PUEBLA</h1>
+<body>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card border-danger mb-3">
+          <div class="card-body">
+            <div class="card-header">ESTUDIANTE</div>
+            <div class="col-6">
+              <i class="fa-solid fa-user"></i>
+              <label for="fullName" class="form-label">Nombre</label>
+              <input type="text" name="fullName" class="form-control" id="fullName" placeholder="Escribe tu Nombre">
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-id-card"></i>
+              <label for="identification" class="form-label">Identificación</label>
+              <input type="text" name="identification" class="form-control" id="identification"
+                placeholder="Escribe tu Identificación">
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-at"></i>
+              <label for="mail" class="form-label">Correo:</label>
+              <input type="text" name="mail" class="form-control" id="mail" placeholder="Escribe tu Correo">
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-clipboard"></i>
+              <label for="inscription" class="form-label">Matrícula</label>
+              <input type="text" name="inscription" class="form-control" id="inscription"
+                placeholder="Escribe tu numero de Matrícula">
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-house-chimney-user"></i>
+              <label for="direction" class="form-label">Dirección:</label>
+              <input type="text" name="direction" class="form-control" id="direction"
+                placeholder="Escribe tu Dirección">
+            </div>
+            <div class="col-6">
+              <i class="fa-solid fa-square-1"></i>
+              <label for="level" class="form-label">Nivel:</label>
+              <input type="text" name="level" class="form-control" id="level" placeholder="Escribe tu Nivel">
+            </div>
+            <br>
+            <div class="card-footer text-muted">
+              <button class="btn btn-primary" onclick="addStudent()">Agregar estudiante</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card border-info mb-3">
+          <div class="card-body">
+            <div class="card-header">Profesor </div>
+            <div class="col-6">
+              <i class="fa-solid fa-user"></i>
+              <label for="fullName-teacher" class="form-label">Nombre </label>
+              <input type="text" name="fullName-teacher" class="form-control" id="fullName-teacher"
+                placeholder="Nombre ">
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-id-card"></i>
+              <label for="identification-teacher" class="form-label">Identificación</label>
+              <input type="text" name="identification-teacher" class="form-control" id="identification-teacher"
+                placeholder="Identificación">
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-at"></i>
+              <label for="mail-teacher" class="form-label">Correo </label>
+              <input type="text" name="mail-teacherr" class="form-control" id="mail-teacher" placeholder="Email">
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-house-chimney-user"></i>
+              <label for="direction-teacher" class="form-label">Dirección </label>
+              <input type="text" name="direction-teacher" class="form-control" id="direction-teacher"
+                placeholder="Dirección">
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-user-graduate"></i>
+              <label for="title-teacher" class="form-label">Título obtenidos:</label>
+              <input type="text" name="title-teacher" class="form-control" id="title-teacher"
+                placeholder="Numero de Títulos obtenidos">
+            </div>
+            <div class="col-8">
+              <i class="fa-sharp fa-solid fa-table-list"></i>
+              <label for="area-teacher" class="form-label">Area: </label>
+              <select class="form-select form-select-lg" name="" id="area-teacher"></select>
+            </div>
+            <br>
+            <div class="card-footer text-muted">
+              <button class="btn btn-primary" onclick="addTeacher()">Agregar profesor</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-header"> ACTIVIDAD </div>
+              <div class="col-8">
+                <i class="fa-sharp fa-solid fa-table-list"></i>
+                <label for="name-activity" class="form-label">Nombre:</label>
+                <input type="text" name="name-activity" id="name-activity" class="form-control" placeholder="examen">
+              </div>
+              <div class="card-footer text-muted">
+                <button class="btn btn-danger" onclick="addActivity()">Agregar actividad</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card border-danger mb-3">
+            <div class="card-body">
+              <div class="card-header"> CURSO </div>
+              <label for="name-course" class="form-label">Materia :</label>
+              <input type="text" name="name-course" id="name-course" class="form-control" placeholder="Base de datos">
+            </div>
+            <div class="card-footer text-muted">
+              <button class="btn btn-danger" onclick="addCourse()">Agregar Curso</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <div class="col-sm-6">
+        <div class="card border-info mb-3">
+          <div class="card-body">
+            <div class="card-header">CONFIGURACIÓN DEL LIBRO DE CALIFICACIONES </div>
+            <div class="col-6">
+              <i class="fa-solid fa-user"></i>
+              <label for="value-gradebook" class="form-label">Valor: </label>
+              <input type="text" name="value-gradebook" class="form-control" id="value-gradebook" placeholder="100%">
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-id-card"></i>
+              <label for="course-gradebook" class="form-label">Curso:</label>
+              <select class="form-select form-select-lg" name="course-gradebook" id="course-gradebook">
+              </select>
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-at"></i>
+              <label for="activity-gradebook" class="form-label">Actividad:</label>
+              <select class="form-select form-select-lg" name="activity-gradebook" id="activity-gradebook"></select>
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-house-chimney-user"></i>
+              <label for="topgrade-gradebook" class="form-label">Nota máxima: </label>
+              <input type="text" name="topgrade-gradebook" class="form-control" id="topgrade-gradebook"
+                placeholder="100%">
+            </div>
+            <br>
+            <div class="card-footer text-muted">
+              <button class="btn btn-primary" onclick="addActivity()">Agregar actividad</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card border-info mb-3">
+          <div class="card-body">
+            <div class="card-header">ASIGNAR LAS CALIFICACIONES </div>
+            <div class="col-6">
+              <i class="fa-solid fa-user"></i>
+              <label for="name-student" class="form-label">Estudiante:</label>
+              <select class="form-select form-select-lg" name="name-student" id="name-student"></select>
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-id-card"></i>
+              <label for="course-grade" class="form-label">Curso:</label>
+              <select class="form-select form-select-lg" name="course-grade" id="course-grade">
+              </select>
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-house-chimney-user"></i>
+              <label for="name-grade" class="form-label">Profesor:</label>
+              <select class="form-select form-select-lg" name="name-grade" id="name-grade"></select>
+            </div>
+            <div class="col-6">
+              <i class="fa-sharp fa-solid fa-at"></i>
+              <label for="topgrade-gradebook" class="form-label">Nota:</label>
+              <input type="text" name="topgrade-gradebook" id="topgrade-gradebook" class="form-control" placeholder="100%">
+            </div>      
+            <div class="col-6">
+              <label for="" class="">Estado</label>
+              
+            </div> 
+              <div class="card-footer text-muted">
+              <div class="col-6"><span id="estado-nota"></span></div>
+              <br>
+              <button class="btn btn-primary" id="estadoNota">Agregar actividad</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script>let exports = {}; </script>
+    <script src="dist/main.js"></script>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+      </script>
+</body>
+
+</html>
